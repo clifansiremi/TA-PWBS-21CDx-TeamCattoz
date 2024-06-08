@@ -11,7 +11,7 @@ export default function View() {
     <div>
       <table className="w-full">
         {/* judul tabel */}
-        
+
 
         {/* isi tabel */}
       </table>
