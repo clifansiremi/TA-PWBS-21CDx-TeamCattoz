@@ -7,8 +7,8 @@ import type { Metadata } from 'next';
 // import tailwind
 import 'tailwindcss/tailwind.css';
 export const metadata: Metadata = {
-  title: 'View Mahasiswa',
-  description: 'Halaman Tampil Data Mahasiswa',
+  title: 'View',
+  description: 'Halaman Beranda',
 };
 
 export default function RootLayout({
