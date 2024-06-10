@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Navbar from '../components/Navbar';
+import Navbar from '../componen/navbar';
 
 const PengelolaanPerikanan: React.FC = () => {
   return (
@@ -9,6 +8,6 @@ const PengelolaanPerikanan: React.FC = () => {
       <p>Informasi mengenai pengelolaan perikanan.</p>
     </div>
   );
-}
+};
 
 export default PengelolaanPerikanan;
