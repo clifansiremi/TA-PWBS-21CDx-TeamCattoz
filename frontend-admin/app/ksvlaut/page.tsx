@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Navbar from '../components/Navbar';
+import Navbar from '../componen/navbar';
 
 const KonservasiLaut: React.FC = () => {
   return (
@@ -9,6 +8,6 @@ const KonservasiLaut: React.FC = () => {
       <p>Informasi mengenai konservasi laut.</p>
     </div>
   );
-}
+};
 
 export default KonservasiLaut;
