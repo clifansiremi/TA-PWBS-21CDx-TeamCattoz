@@ -1,33 +1,28 @@
 
-const fetcher = (url: string) => fetch(url).then((response) => response.json());
+// components/Navbar.tsx
 
-export default function View() {
+import Link from 'next/link';
+import styles from './Navbar.module.css';
+
+const Navbar: React.FC = () => {
   return (
-    <div>
-      <table className="w-full">
-        {/* judul tabel */}
-        <thead>
-          <tr>
-            <th className="w-1/12 border-solid border-2 border-red-700 p-2.5 bg-gray-200">Beranda</th>
-            <th className="w-2/12 border-solid border-2 border-red-700 p-2.5 bg-gray-200">Konservasi Laut</th>
-            <th className="w-4/12 border-solid border-2 border-red-700 p-2.5 bg-gray-200">Pengelolaan Perikanan</th>
-            <th className="w-3/12 border-solid border-2 border-red-700 p-2.5 bg-gray-200">Tentang Kami</th>
-            <th className="w-4/12 border-solid border-2 border-red-700 p-2.5 bg-gray-200">Jurusan</th>
-          </tr>
-        </thead>
-        {/* isi tabel */}
-        <tbody>
-          
-              <tr>
-                <td className="border-solid border-2 border-red-700 p-1.5 text-center">1</td>
-                <td className="border-solid border-2 border-red-700 p-1.5 text-center">21312073</td>
-                <td className="border-solid border-2 border-red-700 p-1.5">Pia</td>
-                <td className="border-solid border-2 border-red-700 p-1.5">0897</td>
-                <td className="border-solid border-2 border-red-700 p-1.5">Informatika</td>
-              </tr>
-          
-        </tbody>
-      </table>
-    </div>
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        <li className={styles.navItem}>
+          <Link href="/">Beranda</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/konservasi-laut">Konservasi Laut</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/pengelolaan-perikanan">Pengelolaan Perikanan</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/about-me">About Me</Link>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
+
+export default Navbar;
