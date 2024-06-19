@@ -1,9 +1,8 @@
 
-// components/Navbar.tsx
-
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 
+// membuat style navbar
 const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
