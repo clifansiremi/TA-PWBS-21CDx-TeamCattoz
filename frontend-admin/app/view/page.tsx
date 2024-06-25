@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
 
-      // menambahkan logo
+{/* menambahkan logo */}
       <div className={styles.logo}>
         <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={50} height={50} />
+        <Image src="/logo1.png" alt="Logo" width={100} height={100} />
         </Link>
       </div>
 
