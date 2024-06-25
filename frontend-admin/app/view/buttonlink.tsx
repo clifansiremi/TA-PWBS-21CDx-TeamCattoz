@@ -1,14 +1,14 @@
 // ButtonLink.tsx
 
 import Link from 'next/link';
-import styles from './ButtonLink.module.css';
+import styles from './buttonLink.module.css';
 
 interface ButtonLinkProps {
   href: string;
   text: string;
 }
 
-const ButtonLink: React.FC<ButtonLinkProps> = ({ href, text }) => {
+const buttonLink: React.FC<ButtonLinkProps> = ({ href, text }) => {
   return (
     <Link href={href} passHref>
       <button className={styles.button}>{text}</button>
@@ -16,4 +16,4 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({ href, text }) => {
   );
 };
 
-export default ButtonLink;
+export default buttonLink;
