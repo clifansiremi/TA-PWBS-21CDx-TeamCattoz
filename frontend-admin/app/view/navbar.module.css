@@ -5,6 +5,10 @@
   padding: 1rem;
 }
 
+.logo {
+  margin-right: auto;
+}
+
 .navList {
   list-style-type: none;
   display: flex;
