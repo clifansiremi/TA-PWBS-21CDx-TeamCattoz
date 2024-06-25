@@ -1,12 +1,17 @@
 import Link from 'next/link';
 import Navbar from '../view/page';
+import ButtonLink from '../view/buttonlink';
 
 const AboutMe: React.FC = () => {
   return (
     <div>
-      <h1>About Me</h1>
       <Navbar />
-      <p>Selamat datang di halaman About Me!</p>
+      <main>
+        <h1>About Me</h1>
+        <ButtonLink href="/" text="Beranda" />
+        <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
+        <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
+      </main>
     </div>
   );
 }
