@@ -31,6 +31,14 @@ const Home: React.FC = () => {
           />
         </div>
 
+        <hr className={styles.divider} />
+        <section className={styles.infoSection}>
+          <h2>Informasi Penting</h2>
+          <p>
+            Situs ini didedikasikan untuk konservasi laut dan pengelolaan perikanan yang berkelanjutan. Kami percaya bahwa dengan upaya bersama, kita dapat melindungi dan melestarikan keanekaragaman hayati laut untuk generasi mendatang. Di halaman ini, Anda akan menemukan informasi tentang proyek kami, kebijakan terbaru, serta berita dan acara yang berkaitan dengan konservasi laut dan perikanan.
+          </p>
+        </section>
+
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
         <ButtonLink href="/about-me" text="About Me" />
