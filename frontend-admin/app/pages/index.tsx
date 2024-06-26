@@ -20,7 +20,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main >
+      <main className={styles.main}>
         <h1>Selamat Datang di Beranda</h1>
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
