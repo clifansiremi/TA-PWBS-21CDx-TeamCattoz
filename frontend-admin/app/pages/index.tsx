@@ -10,10 +10,17 @@ const Home: React.FC = () => {
   const images = ['/images/slide1.jpg', '/images/slide2.jpg', '/images/slide3.jpg', '/images/slide4.jpg', '/images/slide5.jpg'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div>
       <Navbar />
-      <main>
+      <main >
         <h1>Selamat Datang di Beranda</h1>
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
