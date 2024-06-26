@@ -22,9 +22,12 @@ const Home: React.FC = () => {
       <Navbar />
       <main className={styles.main}>
         <h1>Selamat Datang di Website Kami</h1>
+        <div className={styles.slideshow}>
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
         <ButtonLink href="/about-me" text="About Me" />
+        </div>
+        
       </main>
     </div>
   );
