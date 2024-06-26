@@ -4,7 +4,16 @@ import styles from './pengelolaanperikanan.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
 
+const images = [
+  '/images/pic1.jpg',
+  '/images/pic2.jpg',
+  '/images/pic3.jpg',
+];
+
 const PengelolaanPerikanan: React.FC = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  
   return (
     <div>
       <Navbar />
