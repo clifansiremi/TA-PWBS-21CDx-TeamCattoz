@@ -2,12 +2,13 @@
 
 import Navbar from '../view/page';
 import ButtonLink from '../view/buttonlink';
+import styles from './konservasilaut.module.css';
 
 const KonservasiLaut: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main>
+      <main className={styles.main}>
         <h1>Konservasi Laut</h1>
         <p>
           Konservasi laut adalah upaya yang sangat penting untuk melindungi keanekaragaman hayati laut dan pesisir. Di Indonesia, misalnya, dua per tiga wilayahnya adalah laut yang sangat kaya keanekaragaman hayati. Untuk mencapai tujuan ini, konservasi dilakukan melalui pendirian kawasan seperti taman dan suaka laut, serta penerapan kebijakan yang dikombinasikan dengan kuota dan insentif pasar. Ada lebih dari 170 kawasan konservasi laut yang tersebar dari Sabang sampai Merauke, dengan luas sekitar 19 juta hektar. Manfaat ekonominya nyata karena sebagian besar kegiatan wisata bahari dan perikanan terjadi di dalam kawasan konservasi laut, seperti di Wakatobi dan Raja Ampat. Teknologi revolusi industri 4.0 seperti advanced sensor platforms, kecerdasan buatan, pesawat nirawak, dan bioteknologi juga digunakan untuk memperkuat pelindungan terhadap spesies dan habitat serta menyokong perikanan berkelanjutan.
@@ -50,11 +51,12 @@ const KonservasiLaut: React.FC = () => {
         <p>
           Dengan demikian, konservasi laut di Indonesia dilakukan melalui pendirian kawasan, penerapan kebijakan, penggunaan teknologi, pemberdayaan masyarakat, pengelolaan kawasan, pembangunan ekonomi hijau, rehabilitasi ekosistem, dan target pembentukan kawasan konservasi laut yang lebih cepat.
         </p>
-
-       
+        
+        <div className={styles.buttonContainer}>
         <ButtonLink href="/" text="Beranda" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
         <ButtonLink href="/about-me" text="About Me" />
+        </div>
         
       </main>
     </div>
