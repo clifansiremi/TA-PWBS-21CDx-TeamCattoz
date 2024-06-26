@@ -24,6 +24,14 @@ const AboutMe: React.FC = () => {
           </ul>
         </section>
 
+        <section>
+          <h2>Kontak</h2>
+          <p>Jika Anda tertarik untuk berdiskusi lebih lanjut atau bekerja sama dalam proyek konservasi dan pengelolaan perikanan, jangan ragu untuk menghubungi kami melalui:</p>
+          <ul>
+            <li>Email: [riskafia142@gmail.com]</li>
+            <li>Telepon: [08979094701]</li>
+          </ul>
+        </section>
 
         <ButtonLink href="/" text="Beranda" />
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
