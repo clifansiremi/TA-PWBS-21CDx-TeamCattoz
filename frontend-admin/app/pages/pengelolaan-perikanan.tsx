@@ -93,7 +93,13 @@ const PengelolaanPerikanan: React.FC = () => {
           <button onClick={nextImage} className={styles.nextButton}>›</button>
         </div>
 
-      
+      {/* membuat kontainer button/tombol */}
+        <div className={styles.buttonContainer}>
+          <ButtonLink href="/" text="Beranda" />
+          <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
+          <ButtonLink href="/about-me" text="About Me" />
+        </div>
+        
       </main>
     </div>
   );
