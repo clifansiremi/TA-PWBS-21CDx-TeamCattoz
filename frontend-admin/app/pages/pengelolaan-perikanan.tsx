@@ -2,6 +2,7 @@ import Navbar from '../view/page';
 import ButtonLink from '../view/buttonlink';
 import styles from './pengelolaanperikanan.module.css';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const PengelolaanPerikanan: React.FC = () => {
   return (
