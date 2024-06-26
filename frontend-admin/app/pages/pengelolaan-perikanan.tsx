@@ -20,7 +20,7 @@ const PengelolaanPerikanan: React.FC = () => {
   const prevImage = () => {
     setCurrentImage((prevImage) => (prevImage - 1 + images.length) % images.length);
   };
-  
+
   return (
     <div>
       <Navbar />
@@ -85,6 +85,15 @@ const PengelolaanPerikanan: React.FC = () => {
       <ButtonLink href="/" text="Beranda" />
       <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
       <ButtonLink href="/about-me" text="About Me" />
+      
+      {/* membuat code slideshow */}
+        <div className={styles.carousel}>
+          <button onClick={prevImage} className={styles.prevButton}>‹</button>
+          <Image src={images[currentImage]} alt="Carousel Image" width={600} height={400} />
+          <button onClick={nextImage} className={styles.nextButton}>›</button>
+        </div>
+
+      
       </main>
     </div>
   );
