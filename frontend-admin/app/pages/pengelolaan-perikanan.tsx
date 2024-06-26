@@ -16,6 +16,10 @@ const PengelolaanPerikanan: React.FC = () => {
   const nextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
   };
+
+  const prevImage = () => {
+    setCurrentImage((prevImage) => (prevImage - 1 + images.length) % images.length);
+  };
   
   return (
     <div>
