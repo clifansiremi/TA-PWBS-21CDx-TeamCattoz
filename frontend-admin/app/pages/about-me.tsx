@@ -24,6 +24,7 @@ const AboutMe: React.FC = () => {
           </ul>
         </section>
 
+        {/* menambahkan konten kontak */}
         <section>
           <h2>Kontak</h2>
           <p>Jika Anda tertarik untuk berdiskusi lebih lanjut atau bekerja sama dalam proyek konservasi dan pengelolaan perikanan, jangan ragu untuk menghubungi kami melalui:</p>
