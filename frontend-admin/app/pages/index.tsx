@@ -23,10 +23,18 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         <h1>Selamat Datang di Website Kami</h1>
         <div className={styles.slideshow}>
+          <Image
+            src={images[currentImageIndex]}
+            alt="Slideshow Image"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
         <ButtonLink href="/about-me" text="About Me" />
-        </div>
+        
         
       </main>
     </div>
