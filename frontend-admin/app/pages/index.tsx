@@ -21,7 +21,7 @@ const Home: React.FC = () => {
     <div>
       <Navbar />
       <main className={styles.main}>
-        <h1>Selamat Datang di Beranda</h1>
+        <h1>Selamat Datang di Website Kami</h1>
         <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
         <ButtonLink href="/pengelolaan-perikanan" text="Pengelolaan Perikanan" />
         <ButtonLink href="/about-me" text="About Me" />
