@@ -6,6 +6,7 @@ const PengelolaanPerikanan: React.FC = () => {
   return (
     <div>
       <Navbar />
+      <main className={styles.main}>
       <h1>Pengelolaan Perikanan</h1>
       <p>
           Pengelolaan perikanan merupakan salah satu aspek penting dalam menjaga keberlanjutan sumber daya laut. Di Indonesia, pengelolaan perikanan dilakukan dengan berbagai upaya yang mencakup kebijakan, teknologi, dan pemberdayaan masyarakat. Berikut adalah beberapa contoh upaya pengelolaan perikanan di Indonesia:
@@ -65,6 +66,7 @@ const PengelolaanPerikanan: React.FC = () => {
       <ButtonLink href="/" text="Beranda" />
       <ButtonLink href="/konservasi-laut" text="Konservasi Laut" />
       <ButtonLink href="/about-me" text="About Me" />
+      </main>
     </div>
   );
 };
