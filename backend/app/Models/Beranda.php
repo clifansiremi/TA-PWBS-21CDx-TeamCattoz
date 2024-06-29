@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Beranda extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'image', 'nama_konten', 'deskripsi_konten'
+    ];
 }

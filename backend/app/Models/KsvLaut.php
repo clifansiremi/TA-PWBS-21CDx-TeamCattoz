@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class KsvLaut extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'image', 'nama_konten', 'deskripsi_konten'
+    ];
 }

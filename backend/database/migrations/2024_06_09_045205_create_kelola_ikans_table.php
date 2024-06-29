@@ -11,8 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kelola_ikans', function (Blueprint $table) {
+        Schema::create('kelola_ikan', function (Blueprint $table) {
             $table->id();
+
+            // field nama konten
+            $table->string('nama_konten', 100);
+
+            // field foto konten
+            $table->string('image');
+
+            // field deskripsi konten
+            $table->text('deskripsi_konten');
+            
             $table->timestamps();
         });
     }
@@ -22,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kelola_ikans');
+        Schema::dropIfExists('kelola_ikan');
     }
 };
