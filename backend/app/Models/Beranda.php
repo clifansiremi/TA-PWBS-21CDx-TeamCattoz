@@ -15,7 +15,7 @@ class Beranda extends Model
     // buat variabel untuk inisialisasi tabel
     protected $table = "beranda";
 
-    // buat fungsi untuk menampilkan data mahasiswa
+    // buat fungsi untuk menampilkan data
     function viewData()
     {
         // kalau ada message, tambahkan where
