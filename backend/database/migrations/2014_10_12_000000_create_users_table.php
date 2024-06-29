@@ -12,16 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            // field id
+            $table->integer('id')->autoIncrement();
 
             // field nama
-            $table->string('name', 100);
+            $table->string('nama', 100);
 
             // field email
             $table->string('email', 100)->unique();
 
             // field kata sandi
-            $table->string('password');
+            $table->string('sandi');
 
             // field ingat kata sandi
             $table->rememberToken();
