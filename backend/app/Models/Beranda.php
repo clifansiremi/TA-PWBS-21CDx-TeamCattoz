@@ -19,7 +19,7 @@ class Beranda extends Model
     function viewData()
     {
         // kalau ada message, tambahkan where
-        $query = $this->select("image AS foto", "nama_konten AS nama", "deskripsi_konten AS deskripsi")->from($this->table)->orderBy("id");
+        $query = $this->select("id AS id_konten", "image AS foto", "nama_konten AS nama", "deskripsi_konten AS deskripsi")->from($this->table)->orderBy("id");
 
         return $query->get;
     }
@@ -45,7 +45,7 @@ class Beranda extends Model
     // buat fungsi untuk check data (berdasarkan foto konten)
     function checkData($image)
     {
-        $query = $this->select("image")->whereRaw("TO_BASE64(image) = '$image'");
+        $query = $this->select("id")->whereRaw("TO_BASE64(image) = '$image'");
 
         return $query->get();
     }
